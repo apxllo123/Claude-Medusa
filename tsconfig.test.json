@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig.node.json",
+  "include": [
+    "src/main/**/*.test.ts",
+    "src/main/**/*",
+    "src/shared/**/*",
+    "src/types/**/*",
+    "src/renderer/src/mac-compatibility.d.ts"
+  ],
+  "compilerOptions": {
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+    "types": ["node", "electron-vite/node"]
+  }
+}
